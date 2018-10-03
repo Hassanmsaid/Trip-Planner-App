@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.Reservations.ReserveHotelActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_reserveHotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_toolbar"/>
+
+    <TextView
+        android:id="@+id/reserve_hotel_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reserve Hotel"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textSize="25sp"/>
+
+    <ImageButton
+        android:id="@+id/locationBtnHotel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/tarirmap"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/toolbar_reserveHotel"
+        android:background="#FFF"/>
+
+    <ImageView
+        android:id="@+id/hotelImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hotelimg"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="20dp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/ReservehiltonTV"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:text="Hilton Hotel"-->
+        <!--android:textSize="12dp"-->
+        <!--android:layout_marginTop="165dp"-->
+        <!--android:layout_marginLeft="130dp"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="#2986ae"/>-->
+    <TextView
+        android:id="@+id/hotelNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotel Name"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#0e2485"
+        android:layout_below="@id/locationBtnHotel"/>
+
+    <RatingBar
+        android:id="@+id/rating_ReserveHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:isIndicator="true"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@id/hotelNameTV"/>
+
+    <ImageView
+        android:id="@+id/singleRoomImgV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/singleroom"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/singleRoomTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single Room"
+        android:layout_below="@id/rating_ReserveHotel"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#2986ae"/>
+
+
+    <TextView
+        android:id="@+id/pricePerSingle_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price per single room :"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="290dp"
+        android:textColor="#0e2485"/>
+
+    <TextView
+        android:id="@+id/pricePerSingle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50 $"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="290dp"
+        android:textColor="#ff7011"/>
+
+    <TextView
+        android:id="@+id/nomOfSingle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="number of single room :"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="130dp"
+        android:textColor="#ff7011"/>
+
+
+    <ImageButton
+        android:id="@+id/IncreaseSingleRoomBtn"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/ic_arrow_drop_up_black_24dp"
+        android:background="@null"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="315dp"/>
+    <TextView
+        android:id="@+id/number_Single_1_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="315dp"
+        android:textColor="#2986ae"/>
+
+    <ImageButton
+        android:id="@+id/DecreaseSingleRoomBtn"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/ic_arrow_drop_down_black_24dp"
+        android:background="@null"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="315dp"/>
+    <ImageView
+        android:id="@+id/DoubleRoomImgV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/singleRoomImgV"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/twinroom"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/DoubleRoomTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Double Room"
+        android:layout_below="@id/singleRoomImgV"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#2986ae"/>
+
+
+    <TextView
+        android:id="@+id/pricePerDouble_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price per double room :"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="400dp"
+        android:textColor="#0e2485"/>
+
+    <TextView
+        android:id="@+id/pricePerDouble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100 $"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="400dp"
+        android:textColor="#ff7011"/>
+
+    <TextView
+        android:id="@+id/nomOfDouble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="number of double room :"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="130dp"
+        android:textColor="#ff7011"/>
+
+    <ImageButton
+        android:id="@+id/IncreaseDoubleRoomBtn"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/ic_arrow_drop_up_black_24dp"
+        android:background="@null"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="425dp"/>
+    <TextView
+        android:id="@+id/number_Double_1_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="315dp"
+        android:textColor="#2986ae"/>
+
+    <ImageButton
+        android:id="@+id/DecreaseDoubleRoomBtn"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/ic_arrow_drop_down_black_24dp"
+        android:background="@null"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="425dp"/>
+
+
+    <Button
+        android:id="@+id/ReserveHotelBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/orangesliderr"
+        android:text="Reserve"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

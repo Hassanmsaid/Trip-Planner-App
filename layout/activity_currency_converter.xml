@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.CurrencyConverterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/currency_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currency Converter"
+        android:textSize="25sp"
+        android:textColor="#FFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/enter_amountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter amount of money"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/currency_toolbar"/>
+
+       <EditText
+           android:id="@+id/enter_amountET"
+           android:layout_width="300dp"
+           android:layout_height="50dp"
+           android:layout_marginVertical="20dp"
+           android:paddingLeft="20dp"
+           android:background="@drawable/transparent_edge"
+           android:layout_marginLeft="20dp"
+           android:layout_below="@id/enter_amountTV"/>
+
+        <TextView
+            android:id="@+id/FromText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:layout_marginLeft="35dp"
+            android:textColor="#2986ae"
+            android:textSize="20sp"
+            android:layout_below="@id/enter_amountET"/>
+
+        <Spinner
+            android:id="@+id/currency_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/currencies"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/FromText"/>
+
+        <TextView
+            android:id="@+id/ToText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/FromText"
+            android:text="To"
+            android:layout_marginLeft="220dp"
+            android:textColor="#2986ae"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/currency_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/currencies"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/ToText" />
+
+
+        <Button
+            android:id="@+id/Convert_currency_converterBtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/orangesliderr"
+            android:text="Convert"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/currency_from"/>
+        <TextView
+            android:id="@+id/result_convert"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Result"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/Convert_currency_converterBtn"/>
+
+
+</RelativeLayout>

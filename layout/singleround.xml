@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/roundflight_parent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/roundflyingFromTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="From :"
+            android:textColor="#ef4508"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/roundflyingToTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roundflyingFromTV"
+            android:layout_marginLeft="85dp"
+            android:text="To :"
+            android:textColor="#ef4508"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/roundflyingFromTV"
+            android:layout_alignTop="@id/roundflyingFromTV"/>
+
+        <TextView
+            android:id="@+id/roundFlightNoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roundflyingToTV"
+            android:layout_marginTop="5dp"
+            android:text="Flight no :"
+            android:textColor="#ef4508"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/roundAirwaysTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roundFlightNoTV"
+            android:text="Airways :"
+            android:textSize="16sp"
+            android:textColor="#ef4508"
+            android:layout_alignTop="@id/roundFlightNoTV"
+            android:layout_marginLeft="170dp"/>
+
+        <TextView
+            android:id="@+id/roundflightBusinessPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roundAirwaysTV"
+            android:layout_marginTop="5dp"
+            android:text="Business:"
+            android:textColor="#2986ae"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/roundflightBusinessPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roundflightBusinessPrice"
+            android:layout_marginTop="5dp"
+            android:text="Bus"
+            android:textColor="#2986ae"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/roundflightEconomyPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roundAirwaysTV"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="170dp"
+            android:text="Economy:"
+            android:textColor="#2986ae"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/roundflightEconomyPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roundflightEconomyPrice"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="170dp"
+            android:text="Eco"
+            android:textColor="#2986ae"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.EditProfileActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:textSize="25sp"
+        android:textColor="#FFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editProfileTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="#2986ae"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"/>
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="username"
+            android:paddingLeft="20dp"
+            android:textColor="#02023e"/>
+
+
+        <EditText
+            android:id="@+id/editPasswordOld"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Old Password"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="#02023e"/>
+        <EditText
+            android:id="@+id/editPasswordNew"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Old Password"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="#02023e"/>
+        <Button
+            android:id="@+id/EditProfileBtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/orangesliderr"
+            android:text="Change"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

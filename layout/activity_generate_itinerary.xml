@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.GenerateItineraryActivity">
+<!--comment-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_GenerateIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Itinerary"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/from_GI_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_GenerateIT"
+        android:text="From"
+        android:textSize="20sp"
+        android:textColor="#0d38a5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/from_GI_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/from_GI_TV"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/Cities"/>
+    <TextView
+        android:id="@+id/to_GI_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_GenerateIT"
+        android:text="To"
+        android:textSize="20sp"
+        android:textColor="#0d38a5"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/to_GI_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to_GI_TV"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/Cities"/>
+
+    <TextView
+        android:id="@+id/calendar_GIt_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose date"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/from_GI_spinner"
+        android:textColor="#ef4508"
+        android:textSize="20sp"/>
+
+    <com.squareup.timessquare.CalendarPickerView
+        android:id="@+id/calendar_GIt"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_below="@id/calendar_GIt_TV"/>
+    <TextView
+        android:id="@+id/budgetTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Budget"
+        android:textColor="#0d38a5"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/calendar_GIt"/>
+    <SeekBar
+        android:id="@+id/seekbarBudget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:min="0"
+        android:max="25000"
+        android:layout_below="@id/budgetTV"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/seekbarBudget">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_gravity="start"
+            android:id="@+id/seek_budget_min"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="25000"
+            android:textSize="20sp"
+            android:layout_gravity="end"
+            android:id="@+id/seek_budget_max"
+            android:layout_marginLeft="260dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/interestsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interests"
+        android:textColor="#0d38a5"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/seekbarBudget"/>
+
+    <RadioButton
+        android:id="@+id/AdventureTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interestsTV"
+        android:text="Adventure"
+        android:textSize="15sp"
+        android:textColor="#ef4508"
+        android:layout_marginLeft="13dp"/>
+    <RadioButton
+        android:id="@+id/SportsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AdventureTV"
+        android:text="Sports"
+        android:textSize="15sp"
+        android:textColor="#ef4508"
+        android:layout_marginLeft="13dp"/>
+    <RadioButton
+        android:id="@+id/HistoricalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SportsTV"
+        android:text="Historical"
+        android:textSize="15sp"
+        android:textColor="#ef4508"
+        android:layout_marginLeft="13dp"/>
+    <RadioButton
+        android:id="@+id/ReligiousTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HistoricalTV"
+        android:text="Religious"
+        android:textSize="15sp"
+        android:textColor="#ef4508"
+        android:layout_marginLeft="13dp"/>
+    <RadioButton
+        android:id="@+id/DinningTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interestsTV"
+        android:text="Dinning"
+        android:textSize="15sp"
+        android:textColor="#ef4508"
+        android:layout_marginLeft="200dp"/>
+    <RadioButton
+        android:id="@+id/EntertainmentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DinningTV"
+        android:text="Entertainment"
+        android:textSize="15sp"
+        android:textColor="#ef4508"
+        android:layout_marginLeft="200dp"/>
+
+    <RadioButton
+        android:id="@+id/ExploringTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EntertainmentTV"
+        android:text="Exploring"
+        android:textSize="15sp"
+        android:textColor="#ef4508"
+        android:layout_marginLeft="200dp"/>
+
+    <RadioButton
+        android:id="@+id/ArtisticTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ExploringTV"
+        android:text="Artistic"
+        android:textSize="15sp"
+        android:textColor="#ef4508"
+        android:layout_marginLeft="200dp"/>
+
+
+    <TextView
+        android:id="@+id/filteredBy_TV_GIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ReligiousTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Filter By"
+        android:textColor="#0d38a5"
+        android:textSize="20sp"/>
+    <Spinner
+        android:id="@+id/filteredBy_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ArtisticTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:entries="@array/filterBy"/>
+
+    <Spinner
+        android:id="@+id/filterTypeGISpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ArtisticTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="220dp"
+        android:entries="@array/SortByType"/>
+
+
+    <TextView
+        android:id="@+id/flightCategory_TV_GIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filteredBy_TV_GIt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Fiight Category"
+        android:textColor="#0d38a5"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/flightCategory_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filteredBy_spinner"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="160dp"
+        android:entries="@array/Class"/>
+
+    <Button
+        android:id="@+id/generateIT_Btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/flightCategory_TV_GIt"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/orangesliderr"
+        android:layout_centerHorizontal="true"
+        android:text="Generate"
+        android:textColor="#FFFF"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
+</ScrollView>

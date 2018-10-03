@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search.ToursActivity">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.Search.ToursActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tourActivity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Tour"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:hint="Destination.."-->
+        <!--android:paddingLeft="20dp"-->
+        <!--android:id="@+id/destET"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:background="@drawable/transparent_edge"/>-->
+        <Spinner
+            android:id="@+id/city_tours_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="80dp"
+            android:entries="@array/Cities"
+            android:layout_below="@id/fromTV_car">
+        </Spinner>
+
+        <TextView
+
+            android:id="@+id/pricerangeTV_tour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price Range"
+            android:textColor="#0d38a5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar1_tour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:min="0"
+            android:max="500"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_gravity="start"
+            android:id="@+id/seek_value_min"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="500"
+            android:textSize="20sp"
+            android:layout_gravity="end"
+            android:id="@+id/seek_value_max"
+            android:layout_marginLeft="280dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/calendar_tourBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose tour date"
+            android:textAllCaps="false"
+            android:background="@null"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ef4508"
+            android:textSize="20sp"/>
+
+        <com.squareup.timessquare.CalendarPickerView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="325dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/calendar_carBtn"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView
+            android:id="@+id/nomOfPerson_tour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Persons"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/numOfPerson_ET"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/transparent_edge"
+            android:layout_marginLeft="20dp"
+            android:text="1"
+            android:paddingLeft="20dp"/>
+</LinearLayout>
+        <LinearLayout
+            android:id="@+id/sort_layout_tour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp"
+            android:layout_below="@id/startLayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:text="Sort by"/>
+            <Spinner
+                android:id="@+id/sort_tour_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/SortByTour"
+                android:layout_marginLeft="20dp">
+            </Spinner>
+            <Spinner
+                android:id="@+id/sort_tour_type_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/SortByType"
+                android:layout_marginLeft="5dp">
+            </Spinner>
+        </LinearLayout>
+    <Button
+        android:id="@+id/searchToursBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/orangesliderr"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

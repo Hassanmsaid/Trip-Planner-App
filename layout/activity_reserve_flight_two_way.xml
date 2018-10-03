@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reservations.ReserveFlightTwoWayActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_reserveFlight_twoway"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_toolbar"/>
+
+
+    <TextView
+        android:id="@+id/reserve_flight_twoway_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reserve Round-Trip"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/date_img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_history_black_24dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginLeft="180dp"/>
+
+    <TextView
+        android:id="@+id/DateFromflightDateTV_twoway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reserve_flight_twoway_TV"
+        android:text="Thu,Jun 28"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/DateReturnflightDateTV_twoway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reserve_flight_twoway_TV"
+        android:text="Sat,Jul 28"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="260dp"/>
+
+    <TextView
+        android:id="@+id/DeptDateTV_twoway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="departure"
+        android:layout_below="@+id/DateFromflightDateTV_twoway"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#2986ae"/>
+
+    <TextView
+        android:id="@+id/ArrivalDateTV_twoway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="arrival"
+        android:layout_below="@id/DeptDateTV_twoway"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#2986ae"/>
+
+    <ImageView
+        android:id="@+id/sahm_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_linear_scale_black_24dp"
+        android:rotation="90"
+        android:layout_below="@id/DeptDateTV_twoway"
+        android:layout_marginLeft="80dp"/>
+
+    <TextView
+        android:id="@+id/from_twoway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/DeptDateTV_twoway"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/DateReturnflightDateTV_twoway"
+        android:layout_marginTop="30dp"
+        android:textColor="#ff7011"/>
+
+
+    <TextView
+        android:id="@+id/fromcity_twoway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cairo"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/DeptDateTV_twoway"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/DateReturnflightDateTV_twoway"
+        android:layout_marginTop="30dp"
+        android:textColor="#0e2485"/>
+
+    <TextView
+        android:id="@+id/to_twoway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/DeptDateTV_twoway"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/from_twoway"
+        android:layout_marginTop="50dp"
+        android:textColor="#ff7011"/>
+
+    <TextView
+        android:id="@+id/tocity_twoway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barcelona"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/DeptDateTV_twoway"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/fromcity_twoway"
+        android:layout_marginTop="40dp"
+        android:textColor="#0e2485"/>
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="250dp"/>
+
+    <TextView
+        android:id="@+id/PassengersTV_twoway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passengers"
+        android:layout_below="@id/ArrivalDateTV_twoway"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/IncreasePassengersBtn"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/ic_arrow_drop_up_black_24dp"
+        android:background="@null"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="315dp"/>
+
+    <TextView
+        android:id="@+id/number_Passengers_1_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_marginTop="313dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#2986ae"/>
+
+    <ImageButton
+        android:id="@+id/DecreasePassengersBtn"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/ic_arrow_drop_down_black_24dp"
+        android:background="@null"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="315dp"/>
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="340dp"/>
+
+    <TextView
+        android:id="@+id/classTV_twoway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IncreasePassengersBtn"
+        android:text="Class"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/classEconomy_twoway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Economy:"
+        android:layout_below="@id/classTV_twoway"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/Priceeconomy_twowayTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:layout_below="@id/showAirways_twowayTV"
+        android:layout_marginLeft="90dp"
+        android:textSize="15sp"
+        android:layout_alignTop="@id/classEconomy_twoway"/>
+
+
+    <TextView
+        android:id="@+id/classBusiness_twoway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business:"
+        android:layout_below="@id/classEconomy_twoway"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/Pricebusiness_twowayTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:layout_below="@id/Priceeconomy_twowayTV"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="90dp"
+        android:textSize="15sp"
+        android:layout_alignTop="@id/classEconomy_twoway"/>
+
+
+
+    <TextView
+        android:id="@+id/airways_twowayTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Airways"
+        android:layout_alignTop="@id/PassengersTV"
+        android:layout_below="@id/tocity_twoway"
+        android:textSize="15sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="250dp"/>
+
+
+    <TextView
+        android:id="@+id/showAirways_twowayTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/airways_twowayTV"
+        android:text="EgyptAir"
+        android:textSize="15sp"
+        android:textColor="#0e2485"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="15dp"/>
+
+
+    <Spinner
+        android:id="@+id/seat_reserve_flight2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/showAirways_twowayTV"
+        android:entries="@array/Class">
+    </Spinner>
+
+
+    <Button
+        android:id="@+id/ReserveFlight_twowayBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/orangesliderr"
+        android:text="Reserve"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

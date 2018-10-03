@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".Search.CarActivity">-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.Search.CarActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_toolbar"/>
+
+
+    <TextView
+        android:id="@+id/search_car_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Cars"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/fromTV_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textSize="18sp"
+            android:textColor="#0d38a5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"/>
+
+    <!--<EditText-->
+        <!--android:id="@+id/FromCity_ET"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@drawable/transparent_edge"-->
+        <!--android:entries="@array/Cities"-->
+        <!--android:paddingHorizontal="15dp"-->
+        <!--android:hint="Enter City.."-->
+        <!--android:layout_below="@id/fromTV_car"/>-->
+    <Spinner
+        android:id="@+id/city_cars_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:entries="@array/Cities"
+        android:layout_below="@id/fromTV_car">
+    </Spinner>
+
+    <Button
+        android:id="@+id/calendar_carBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Car date"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:layout_marginLeft="20dp"
+        android:textColor="#ef4508"
+        android:textSize="20sp"
+        android:layout_below="@id/city_cars_spinner"/>
+    <com.squareup.timessquare.CalendarPickerView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/calendar_carBtn"/>
+
+    <TextView
+
+        android:id="@+id/pricerangeTV_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price Range"
+        android:textColor="#0d38a5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/calendar"
+        android:textSize="20sp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar1_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:min="0"
+        android:max="1000"
+        android:layout_below="@id/pricerangeTV_car"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/seekBar1_car">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_gravity="start"
+            android:id="@+id/seek_budget_min"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="1000"
+            android:textSize="20sp"
+            android:layout_gravity="end"
+            android:id="@+id/seek_budget_max"
+            android:layout_marginLeft="280dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/searchCarBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/orangesliderr"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+       android:layout_below="@id/seekBar1_car"/>
+
+
+</RelativeLayout>

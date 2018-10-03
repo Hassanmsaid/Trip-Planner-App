@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.RegisterActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/regmountain"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tripplannerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip Planner"
+        android:textColor="#1B1464"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/firstnameET"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Fistname"
+        android:textColorHint="#1B1464"
+        android:background="@drawable/white_edge"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/tripplannerTV"/>
+
+    <EditText
+        android:id="@+id/lastnameET"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:hint="Lastname"
+        android:textColorHint="#1B1464"
+        android:layout_toRightOf="@id/firstnameET"
+        android:background="@drawable/white_edge"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/tripplannerTV"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/usernameET"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Username"
+            android:textColorHint="#1B1464"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/white_edge"
+            android:paddingLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Email"
+            android:textColorHint="#1B1464"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_edge"
+            android:paddingLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Password"
+            android:textColorHint="#1B1464"
+            android:inputType="textPassword"
+            android:background="@drawable/white_edge"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/RegisterBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/orangesliderr"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

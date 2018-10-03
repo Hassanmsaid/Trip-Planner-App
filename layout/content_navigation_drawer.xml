@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.NavigationDrawerActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ImageView
+        android:id="@+id/backGround"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/mountain"
+        android:scaleType="fitStart"/>
+
+
+    <ImageButton
+        android:id="@+id/HotelimageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/sliderr"
+        android:src="@drawable/ic_hotel_black_24dp"
+        android:scaleType="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"/>
+    <TextView
+        android:id="@+id/hotelTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotels"
+        android:textColor="#FFF"
+        android:layout_below="@+id/HotelimageButton"
+        android:layout_marginLeft="35dp"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/FlightimageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/sliderr"
+        android:src="@drawable/ic_flight_black_24dp"
+        android:scaleType="centerInside"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="110dp"/>
+    <TextView
+        android:id="@+id/fligtTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flights"
+        android:textColor="#FFF"
+        android:layout_below="@+id/FlightimageButton"
+        android:layout_marginLeft="123dp"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/CarimageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_directions_car_black_24dp"
+        android:background="@drawable/sliderr"
+        android:scaleType="center"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="205dp"/>
+
+    <TextView
+        android:id="@+id/carTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cars"
+        android:textColor="#FFF"
+        android:layout_below="@+id/CarimageButton"
+        android:layout_marginLeft="225dp"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/ToursimageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_language_black_24dp"
+        android:background="@drawable/sliderr"
+        android:scaleType="center"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="295dp"/>
+
+    <TextView
+        android:id="@+id/ToursTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tours"
+        android:textColor="#FFF"
+        android:layout_below="@+id/CarimageButton"
+        android:layout_marginLeft="310dp"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/GenerateItineraryBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/orangesliderr"
+        android:text="Generate Itinerary"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:layout_marginTop="260dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/topHotelsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Hotels"
+        android:textSize="20dp"
+        android:textColor="#0b0941"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_list"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/topHotelsTV">
+    </android.support.v7.widget.RecyclerView>
+    <!--<TextView-->
+        <!--android:id="@+id/topToursTV"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Top Tours"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="#0b0941"-->
+        <!--android:layout_below="@id/main_list"-->
+        <!--android:layout_marginLeft="10dp"/>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/home_tours_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:layout_below="@id/topToursTV">-->
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+</RelativeLayout>
+</ScrollView>

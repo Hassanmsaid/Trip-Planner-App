@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.lenovo.finalgp_test1.LoginActivity">
+
+    <!-- Login progress -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/mountain"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tripplanner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_gravity="center"
+                    android:text="Trip Planner"
+                    android:textColor="#1B1464"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="90dp"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/transparent_edge"
+                        android:drawableLeft="@drawable/ic_adb_black_24dp"
+                        android:hint="@string/prompt_email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="Password"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="textPassword"
+                        android:background="@drawable/transparent_edge"
+                        android:drawableLeft="@drawable/ic_lock_black_24dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <CheckBox
+                    android:id="@+id/checkBox_rememberMe"
+                    android:textColor="#1B1464"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remember me"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"/>
+                <View
+                    android:layout_width="320dp"
+                    android:layout_height="1dp"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="20dp"/>
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:textColor="#FFF"
+                    android:background="@drawable/bluecircle"
+                    android:layout_marginLeft="100dp"
+                    android:text="Login"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/signupBtn"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/orangesliderr"
+                    android:text="Create new Account"
+                    android:textColor="#FFF"
+                    android:layout_marginLeft="100dp"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

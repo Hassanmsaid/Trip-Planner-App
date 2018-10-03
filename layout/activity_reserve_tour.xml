@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reservations.ReserveTourActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.Reservations.ReserveTourActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_tour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tour Details"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/tour_img1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/toolbar_tour"/>
+
+        <TextView
+            android:id="@+id/tour_reserve_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="16dp"
+            android:text="Tour Name"
+            android:textColor="#ff7011"
+            android:textSize="20sp"
+            android:layout_below="@id/tour_img1"
+            android:layout_marginTop="10dp"/>
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/tour_reserve_name"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginLeft="80dp"-->
+            <!--android:text="$"/>-->
+        <TextView
+            android:id="@+id/tour_reserve_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:text="85.99"
+            android:textColor="#ff7011"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tour_reserve_name"
+            android:layout_marginLeft="30dp"/>
+
+        <ImageButton
+            android:id="@+id/locationBtntour"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/tarirmap"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/tour_reserve_price"
+            android:background="#FFF"/>
+
+        <Button
+            android:id="@+id/ReserveTourBtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/orangesliderr"
+            android:text="Book"
+            android:layout_below="@id/locationBtntour"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="20dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecViewRecomended"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ReserveTourBtn"/>
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>

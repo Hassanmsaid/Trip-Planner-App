@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.OneWayFragmentFlight">
+
+    <TextView
+        android:id="@+id/FromTV_oneWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#0d38a5"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/spinner_fromCityOneWay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FromTV_oneWay"
+        android:entries="@array/Cities"
+        android:layout_marginLeft="13dp"/>
+
+
+    <TextView
+        android:id="@+id/ToTV_oneWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:layout_alignTop="@id/FromTV_oneWay"
+        android:layout_marginLeft="220dp"
+        android:textColor="#0d38a5"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/spinner_toCityOneWay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ToTV_oneWay"
+        android:layout_marginLeft="215dp"
+        android:entries="@array/Cities"/>
+
+
+    <TextView
+        android:id="@+id/DeptDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_fromCityOneWay"
+        android:layout_marginTop="20dp"
+        android:text="Departure Date"
+        android:layout_marginLeft="20dp"
+        android:textColor="#0d38a5"
+        android:textSize="20sp"/>
+
+    <com.squareup.timessquare.CalendarPickerView
+        android:id="@+id/calendar_flight1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@id/DeptDateTV"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/button_searchForFlightsOneWay"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:text="Search"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/orangesliderr"
+        android:layout_below="@id/calendar_flight1"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/flight_parent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/flyingFromTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="From :"
+            android:textColor="#ef4508"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/flyingToTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flyingFromTV"
+            android:layout_marginLeft="85dp"
+            android:text="To :"
+            android:textColor="#ef4508"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/flyingFromTV"
+            android:layout_alignTop="@id/flyingFromTV"/>
+
+        <TextView
+            android:id="@+id/FlightNoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flyingToTV"
+            android:layout_marginTop="5dp"
+            android:text="Flight no :"
+            android:textColor="#ef4508"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/AirwaysTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FlightNoTV"
+            android:text="Airways :"
+            android:textSize="16sp"
+            android:textColor="#ef4508"
+            android:layout_alignTop="@id/FlightNoTV"
+            android:layout_marginLeft="170dp"/>
+
+        <TextView
+            android:id="@+id/flightBusinessPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AirwaysTV"
+            android:layout_marginTop="5dp"
+            android:text="Business:"
+            android:textColor="#2986ae"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/flightBusinessPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flightBusinessPrice"
+            android:layout_marginTop="5dp"
+            android:text="Bus"
+            android:textColor="#2986ae"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/flightEconomyPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AirwaysTV"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="170dp"
+            android:text="Economy:"
+            android:textColor="#2986ae"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/flightEconomyPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flightEconomyPrice"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="170dp"
+            android:text="Eco"
+            android:textColor="#2986ae"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

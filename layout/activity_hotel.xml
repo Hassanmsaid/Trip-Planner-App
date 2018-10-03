@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search.ToursActivity">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.Search.HotelActivity"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_Searchhotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Hotel"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/hotel_cityTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose City"
+        android:textColor="#ef4508"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/toolbar_Searchhotel"/>
+
+    <Spinner
+        android:id="@+id/city_hotels_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/Cities"
+        android:layout_below="@id/hotel_cityTV">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/calendar_HotelTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose date"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/city_hotels_spinner"
+        android:textColor="#ef4508"
+        android:textSize="20sp"/>
+
+    <com.squareup.timessquare.CalendarPickerView
+        android:id="@+id/calendar_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/calendar_HotelTV"/>
+
+    <TextView
+        android:id="@+id/pricerangeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max single room price"
+        android:textColor="#0d38a5"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_below="@id/calendar_hotel"
+        android:layout_marginTop="20dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar1_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pricerangeTV"
+        android:max="5500"/>
+
+    <TextView
+        android:id="@+id/seek_value_min"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="0"
+        android:textSize="20sp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/seekBar1_hotel"/>
+
+    <TextView
+        android:id="@+id/seek_value_max"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="5500"
+        android:textSize="20sp"
+        android:layout_gravity="end"
+        android:layout_marginLeft="300dp"
+        android:layout_below="@id/seekBar1_hotel"/>
+
+    <TextView
+        android:id="@+id/starsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seek_value_min"
+        android:layout_marginLeft="20dp"
+        android:text="Min Stars"
+        android:textColor="#0d38a5"
+        android:textSize="20dp" />
+    <RatingBar
+        android:id="@+id/rating_hotels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/starsTV"/>
+
+    <LinearLayout
+        android:id="@+id/startLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_below="@id/rating_hotels">
+
+        <TextView
+            android:id="@+id/minRatingTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/starsTV"
+            android:text="MinRating"
+            android:textColor="#ef4508"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"/>
+        <EditText
+            android:id="@+id/minRatingET"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/transparent_edge"
+            android:layout_below="@id/starsTV"
+            android:paddingLeft="18dp"
+            android:text="1"
+            android:layout_marginLeft="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sort_layout_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/startLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:text="Sort by"/>
+        <Spinner
+            android:id="@+id/sort_hotel_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/SortByHotel"
+            android:layout_marginLeft="20dp">
+        </Spinner>
+        <Spinner
+            android:id="@+id/sort_hotel_type_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/SortByType"
+            android:layout_marginLeft="10dp">
+        </Spinner>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/SearchHotelBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="55dp"
+        android:layout_below="@id/sort_layout_hotel"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/orangesliderr"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+</ScrollView>

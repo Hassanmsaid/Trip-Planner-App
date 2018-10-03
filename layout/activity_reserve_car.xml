@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.Reservations.ReserveCarActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Details"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ImageView
+        android:id="@+id/car_img1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/car_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G102"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/car_img1"/>
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/car_img1"-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--android:layout_marginLeft="300dp"-->
+            <!--android:text="$"/>-->
+        <TextView
+            android:id="@+id/car_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="85.99"
+            android:textSize="20sp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/car_img1"
+            android:textColor="#ff7011"/>
+
+    <Button
+        android:id="@+id/ReserveCarBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/orangesliderr"
+        android:text="Book"
+        android:layout_below="@id/tour_reserve_price"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+</LinearLayout>

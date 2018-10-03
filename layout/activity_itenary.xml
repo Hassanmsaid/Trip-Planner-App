@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.ItenaryActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItenaryActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/txtItenary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Itinerary"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/itienraryFlightTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flights"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtItenary"
+        android:textSize="25sp"
+        android:textColor="#000"/>
+    <RelativeLayout
+        android:id="@+id/itienraryFlight"
+        android:layout_width="match_parent"
+        android:layout_below="@id/itienraryFlightTV"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/itienraryflyingFromTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="From :"
+            android:textColor="#ef4508"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/itienraryflyingToTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itienraryflyingFromTV"
+            android:layout_marginLeft="115dp"
+            android:text="To :"
+            android:textColor="#ef4508"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/itienraryflyingFromTV"
+            android:layout_alignTop="@id/itienraryflyingFromTV"/>
+
+        <TextView
+            android:id="@+id/itienraryFlightNoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itienraryflyingToTV"
+            android:layout_marginTop="5dp"
+            android:text="Flight no :"
+            android:textColor="#ef4508"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/itienraryAirwaysTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FlightNoTV"
+            android:text="Airways :"
+            android:textSize="16sp"
+            android:textColor="#ef4508"
+            android:layout_alignTop="@id/itienraryFlightNoTV"
+            android:layout_marginLeft="160dp"/>
+
+        <TextView
+            android:id="@+id/itienraryflightPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itienraryAirwaysTV"
+            android:layout_marginTop="5dp"
+            android:text="Price :"
+            android:textColor="#2986ae"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/itienraryFlight2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/itienraryFlight"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/itienraryflyingFromTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From :"
+            android:textColor="#ef4508"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/itienraryflyingToTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itienraryflyingFromTV2"
+            android:layout_marginLeft="115dp"
+            android:text="To :"
+            android:textColor="#ef4508"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/itienraryflyingFromTV2"
+            android:layout_alignTop="@id/itienraryflyingFromTV2"/>
+
+        <TextView
+            android:id="@+id/itienraryFlightNoTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itienraryflyingToTV2"
+            android:layout_marginTop="5dp"
+            android:text="Flight no :"
+            android:textColor="#ef4508"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/itienraryAirwaysTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itienraryFlightNoTV2"
+            android:text="Airways :"
+            android:textSize="16sp"
+            android:textColor="#ef4508"
+            android:layout_alignTop="@id/itienraryFlightNoTV2"
+            android:layout_marginLeft="160dp"/>
+
+        <TextView
+            android:id="@+id/itienraryflightPriceTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itienraryAirwaysTV2"
+            android:layout_marginTop="5dp"
+            android:text="Price :"
+            android:textColor="#2986ae"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/itienraryHotelTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotel"
+        android:layout_below="@id/itienraryFlight2"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"/>
+    <RelativeLayout
+        android:id="@+id/itienraryhotel_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itienraryHotelTV"
+        android:paddingHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/itienraryimgHotel"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:src="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/itienrarytxtHotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel Name"
+            android:textColor="#ef4508"
+            android:textSize="20sp"
+            android:layout_marginLeft="70dp"/>
+
+        <TextView
+            android:id="@+id/itienrarytxtStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stars"
+            android:textColor="#2986ae"
+            android:textSize="15sp"
+            android:layout_below="@id/itienrarytxtHotel"
+            android:layout_marginLeft="70dp"/>
+        <TextView
+            android:id="@+id/itienrarytxtHotelRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:textColor="#2986ae"
+            android:textSize="15sp"
+            android:layout_below="@id/itienrarytxtStars"
+            android:layout_marginLeft="70dp"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/allRecView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itienraryhotel_parent">
+    </android.support.v7.widget.RecyclerView>
+    
+    <View
+        android:id="@+id/straigh_line"
+        android:layout_width="320sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="2dp"
+        android:background="#ef4508"
+        android:layout_marginVertical="20dp"
+        android:layout_below="@id/allRecView"></View>
+
+    <TextView
+        android:id="@+id/totalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/straigh_line"
+        android:text="Total Price"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#2986ae"/>
+
+    <TextView
+        android:id="@+id/showTotalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalTV"
+        android:text="0.0"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ef4508" />
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="30dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/orangesliderr"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_below="@id/showTotalTV"/>
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="30dp"
+        android:layout_marginLeft="180dp"
+        android:background="@drawable/orangesliderr"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_below="@id/showTotalTV"/>
+</RelativeLayout>
+</ScrollView>
